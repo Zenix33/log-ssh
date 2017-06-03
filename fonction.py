@@ -43,7 +43,7 @@ def email():
 
     server = smtplib.SMTP('smtp-mail.outlook.com', 587)
     server.starttls()
-    server.login(fromaddr, "mot de passe de l'addresse émetrisse")
+    server.login(fromaddr, "mot de passe de l'adresse émettrice")
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
     server.quit()
